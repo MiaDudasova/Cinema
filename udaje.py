@@ -1,20 +1,35 @@
 import json
+import re
 import random
+import datetime
 with open('rezervacie.json') as json_file:
     registracie = json.load(json_file)
 def vytvor(registracie):
-    mp=str(input('Meno a priezvisko: '))
+    meno=str(input('Meno: '))
+    priez=str(input('Priezvisko: '))
     mail=str(input('Mail: '))
     mesto=str(input('Mesto: '))
     kino=str(input('Kino: '))
     film=str(input('Film: '))
     rad=str(input('Rad: '))
     sed=str(input('Sedadlo: '))
-    cis_obj=random.randint(1000000,10000000)
-    while cis_obj in registracie:
-        cis_obj=random.randint(1000000,10000000)
-    registracie[cis_obj]=mp
-    registracie[cis_obj]+=f', {mail}, {mesto}, {kino}, {film}, {rad}, {sed}'
+    dt=datetime.datetime.now()
+    ct=str(dt).split(' ')
+    for i in ct[0].split('-'):
+        ct.append(i)
+    del ct[0]
+    for i in ct[0].split(':'):
+        ct.append(i)
+    del ct[0]
+    for i in ct[5].split('.'):
+        ct.append(i)
+    del ct[5]
+    for i in re.findall('..',ct[6]):
+        ct.append(i)
+    del ct[6]
+    cis_obj=f'{meno[0]}{ct[4]}{priez[1]}{ct[1]}{ct[0]}{ct[8]}{random.randint(100,999)}'
+    registracie[cis_obj]=meno
+    registracie[cis_obj]+=f' {priez}, {mail}, {mesto}, {kino}, {film}, {rad}, {sed}'
     uloz(registracie)
 def uprav(registracie):
     print(registracie)
@@ -32,15 +47,15 @@ def uprav(registracie):
     registracie[cis_obj]+=f', {mail}, {mesto}, {kino}, {film}, {rad}, {sed}'
     uloz(registracie)
 def zmazat(registracie):
-    cis_obj=int(input('Číslo objednávky: '))
-    while cis_obj not in registracie:
-        cis_obj=int(input('Číslo objednávky: '))
+    print (registracie)
+    cis_obj=str(input('Číslo objednávky: '))
     registracie.pop(cis_obj)
     uloz(registracie)
 def vypis(registracie):
     co=str(input('Všetky? '))
     if co=='n':
-        cis_obj=int(input('Číslo objednávky: '))
+        print(registracie.keys())
+        cis_obj=str(input('Číslo objednávky: '))
         print(registracie[cis_obj])
     else:
         print(registracie)
