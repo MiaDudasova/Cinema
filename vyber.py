@@ -21,18 +21,6 @@ with open('program.json') as json_file:
 best_match = ["BRATISLAVA", "KOSICE","BEE MOVIE","SHREK 2","THE MATRIX"]
 
 """
-filmy = {
-    "BRATISLAVA":{
-        "BEE MOVIE": {"12:10": 80, "14:30": 80, "17:50": 80},
-        "SHREK 2": {"15:40": 80, "18:55": 80, "21:15": 80},
-        "THE MATRIX": {"17:50": 80, "19:20": 80, "22:35": 80}
-        },
-    "KOSICE":{
-        "SHREK 2": {"15:40": 80, "18:55": 80, "21:15": 80},
-        "THE MATRIX": {"17:50": 80, "19:20": 80, "22:35": 80}
-        }
-}
-
 vyber = int(input("Vitaj na našej stránke!\nVyber čo chceš spraviť(1 - pozriet program, 2 - kupit listky, 3 - rezervovat miesta, 4 - zrusit rezervaciu): "))
 if vyber == 1:
     print("1")
@@ -72,4 +60,4 @@ print(choose_time)
 
 
 with open('program.json', 'w') as json_file:
-  json.dump(filmy, json_file)
+    json.dump(filmy, json_file)
