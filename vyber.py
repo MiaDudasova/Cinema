@@ -53,10 +53,21 @@ print(best_movie_match_str+":")
 for key,values in filmy[best_city_match_str][best_movie_match_str].items():
     print(key)
 choose_time = input("Choose the time: ")
-choose_time = choose_time.upper()
 print(choose_time)
 
 
+print("    ---------------------PLATNO------------------------")
+for key,value in filmy[best_city_match_str][best_movie_match_str][choose_time].items():
+    print(key, ":", value)
+choose_line = input("Choose the line(A-I): ")
+choose_line = choose_line.upper()
+while choose_line not in ("ABCDEFGHI"):
+    print("Non-existing line. Try again!")
+    choose_line = input("Choose the line(A-I): ")
+choose_seat = int(input("Choose the seat(1-15): "))
+while choose_seat < 1 or choose_seat > 15:
+    print("Non-existing line. Try again!")
+    choose_seat = int(input("Choose the seat(1-15): "))
 
 
 with open('program.json', 'w') as json_file:
