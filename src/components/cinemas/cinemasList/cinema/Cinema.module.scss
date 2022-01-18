@@ -1,0 +1,55 @@
+.cinema {
+  max-width: 210px;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+
+  .bgImg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .2s ease-in;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(0, 0, 0, .80);
+    transition: .2s ease-in-out;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+    .title {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  &:hover {
+    .overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .bgImg {
+      transform: scale(1.02);
+    }
+  }
+}

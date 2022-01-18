@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Cinema City",
+    "city": "Bratislava",
+    "openingHours": "13:00 - 22:00"
+  },
+  {
+    "id": 2,
+    "name": "CineMax",
+    "city": "Bratislava",
+    "openingHours": "14:00 - 20:00"
+  },
+  {
+    "id": 3,
+    "name": "Aupark",
+    "city": "Košice",
+    "openingHours": "12:30 - 23:00"
+  }
+]

@@ -1,0 +1,51 @@
+.cinemaDetail {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  .content {
+    width: 70%;
+    height: 90%;
+    background-color: green;
+    border-radius: 15px;
+    padding: 30px 40px;
+
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      overflow: auto;
+      
+      .movie {
+        height: 200px;
+        width: 150px;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid white;
+        margin: 5px;
+        border-radius: 4px;
+      }
+    }
+
+    .cross {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+
+      a {
+        transition: .2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

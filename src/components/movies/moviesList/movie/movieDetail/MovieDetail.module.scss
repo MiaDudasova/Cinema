@@ -1,0 +1,91 @@
+.movieDetail {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  .content {
+    width: 50%;
+    height: 80%;
+    background-color: black;
+    border-radius: 15px;
+    padding: 30px 40px;
+
+    .cross {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+
+      a {
+        transition: .2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    .wrapper {
+      .header {
+        text-align: center;
+        font-size: 42px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .contentWrapper {
+      display: flex;
+      height: 100%;
+    }
+
+    .generalDesc {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      .smTitle {
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 4px;
+      }
+
+      .smValue {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding-right: 20px;
+        text-align: justify;
+      }
+    }
+
+    .image {
+      height: 400px;
+      width: 40%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    font-weight: bold;
+
+    &:hover {
+      color: black;
+      background: white;
+    }
+  }
+}
