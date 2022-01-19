@@ -1,12 +1,16 @@
 .wrapper {
   display: flex;
-  margin-top: 30px;
+  margin: 30px auto 0px auto;
   justify-content: center;
+  width: 1200px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
 }
 
 .cinema {
   height: 300px;
-  width: 250px;
+  width: 18%;
   padding: 20px;
   display: flex;
   justify-content: center;

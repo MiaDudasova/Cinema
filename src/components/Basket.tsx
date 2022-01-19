@@ -35,7 +35,7 @@ const Basket: FC<Props> = () => {
               />
               <div className={style.text}>
                 <div className={style.xdd}>{p?.name}</div>
-                <div className={style.xdd}>quantity = {p?.cinemas}</div>
+                <div className={style.xdd}>quantity = {basket.find(f => f.filmId === p?.id)?.quantity}</div>
                 <div className={style.xdd}>price = {p?.price}</div>
                 <div
                   className={style.xButton}

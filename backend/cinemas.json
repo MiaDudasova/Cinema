@@ -1,20 +1,50 @@
 [
   {
     "id": 1,
-    "name": "Cinema City",
+    "name": "Cinema City Aupark",
     "city": "Bratislava",
     "openingHours": "13:00 - 22:00"
   },
   {
     "id": 2,
-    "name": "CineMax",
+    "name": "Cinema City Vivo!",
     "city": "Bratislava",
     "openingHours": "14:00 - 20:00"
   },
   {
     "id": 3,
-    "name": "Aupark",
-    "city": "Košice",
+    "name": "Cinema City Eurovea",
+    "city": "Bratislava",
     "openingHours": "12:30 - 23:00"
+  },
+  {
+  "id": 4,
+  "name": "CineMax Bory Mall",
+  "city": "Bratislava",
+  "openingHours": "14:00 - 00:00"
+  },
+  {
+  "id": 5,
+  "name": "CineMax Optima",
+  "city": "Košice",
+  "openingHours": "13:30 - 21:00"
+  },
+  {
+  "id": 6,
+  "name": "Golden Apple Cinema",
+  "city": "Liptovský Mikuláš",
+  "openingHours": "10:00 - 22:00"
+  },
+  {
+  "id": 7,
+  "name": "CineMax",
+  "city": "Banská Bystrica",
+  "openingHours": "12:30 - 00:00"
+  },
+  {
+  "id": 7,
+  "name": "CineMax",
+  "city": "Žilina",
+  "openingHours": "13:30 - 22:00"
   }
 ]
