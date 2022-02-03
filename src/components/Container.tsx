@@ -8,6 +8,7 @@ export type AppState = {
   user: UserType
   basket: Order[]
   films: Order[]
+  ip: string
   onAddToBasket: (o: Order) => void
   onRemoveFromBasket: (id: number) => void
   onConfirmOrder: () => void
@@ -29,6 +30,8 @@ const Container: FC<Props> = ({ children }) => {
 
     setBasket(newBasket)
   }
+
+  const ip = "192.168.0.192"
 
   const [user, setUser] = useState<UserType>(USER)
 
@@ -56,6 +59,7 @@ const Container: FC<Props> = ({ children }) => {
     user,
     basket,
     films,
+    ip,
     onAddToBasket: handleAddToBasket,
     onRemoveFromBasket: hrm,
     onConfirmOrder: handleConfirmOrder,

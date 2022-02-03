@@ -8,12 +8,14 @@ import { ACTORS } from 'constants/demoData/Data'
 import { Rating } from 'react-simple-star-rating'
 import axios from "axios"
 import { Actor, Movie } from 'types/types'
+import { useAppContainer } from 'components/context'
 
 type Props = {}
 
 const MovieDetail: FC<Props> = () => {
   const navigate = useNavigate()
   const params = useParams()
+  const { ip } = useAppContainer()
 
   const [movie, setMovie] = useState<Movie>()
   const [actor, setActor] = useState<Actor[]>([])
@@ -27,7 +29,7 @@ const MovieDetail: FC<Props> = () => {
 
   const getMovies = () => {
       axios
-        .get(`http://localhost:3010/movies/movie?movieid=${params.movieId}`)
+        .get(`http://${ip}:3010/movies/movie?movieid=${params.movieId}`)
         .then(res => setMovie(res.data[0]))
   }
 
@@ -42,7 +44,7 @@ const MovieDetail: FC<Props> = () => {
 
   const getActor = (id: Number) => {
     axios
-      .get(`http://localhost:3010/actors?movieid=${id}`)
+      .get(`http://${ip}:3010/actors?movieid=${id}`)
       .then(res => setActor(res.data))
   }
 

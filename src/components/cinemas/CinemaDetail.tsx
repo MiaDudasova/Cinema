@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import { X } from 'react-feather'
 import { Cinema } from 'types/types'
 import axios from 'axios'
+import { useAppContainer } from 'components/context'
 
 type Props = {}
 
@@ -15,13 +16,14 @@ const CinemaDetail: FC<Props> = () => {
   const navigate = useNavigate()
   const [ cinema, setCinema ] = useState<Cinema>()
   const params = useParams()
+  const { ip } = useAppContainer()
 
   useEffect(() => {
     getCinema()
   }, [])
 
   const getCinema = () => {
-    axios.get(`http://localhost:3010/cinema?cinemaid=${params.cinemaId}`).then(res => setCinema(res.data[0]))
+    axios.get(`http://${ip}:3010/cinema?cinemaid=${params.cinemaId}`).then(res => setCinema(res.data[0]))
     console.log(cinema)
   }
   console.log(cinema)

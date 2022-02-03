@@ -16,6 +16,8 @@
     background-color: green;
     border-radius: 15px;
     padding: 30px 40px;
+    overflow: hidden;
+    overflow-inline: hidden;
 
     .wrapper {
       display: flex;

@@ -6,17 +6,20 @@ import axios from 'axios'
 import { Movie } from 'types/types'
 import useDebounce from 'utils/hooks/useDebounce'
 import style from './movies/Movies.module.scss'
+import { useAppContainer } from './context'
 
 type Props = {}
 
 const Movies: FC<Props> = () => {
+  const { ip } = useAppContainer()
   const location = useLocation()
   const [movies, setMovies] = useState<Movie[]>([])
   const [loading, setLoading] = useState<boolean>(false)
   const [search, setSearch] = useState<string>('')
 
+
   const getMovies = () => {
-    axios.get('http://localhost:3010/movies').then(res => setMovies(res.data))
+    axios.get(`http://${ip}:3010/movies`).then(res => setMovies(res.data))
   }
 
   useEffect(() => {
@@ -41,10 +44,10 @@ const Movies: FC<Props> = () => {
   useEffect(() => {
     if (debouncedQuery.length !== 0) {
       axios
-        .get(`http://localhost:3010/movies?search=${debouncedQuery}`)
+        .get(`http://${ip}:3010/movies?search=${debouncedQuery}`)
         .then(res => setMovies(res.data))
     } else {
-      axios.get('http://localhost:3010/movies').then(res => setMovies(res.data))
+      axios.get(`http://${ip}:3010/movies`).then(res => setMovies(res.data))
     }
   }, [debouncedQuery])
 

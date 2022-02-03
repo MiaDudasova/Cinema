@@ -7,15 +7,17 @@ import { Link } from 'react-router-dom'
 import { Actor } from "types/types"
 import axios from "axios"
 import { useLocation } from "react-router"
+import { useAppContainer } from "components/context"
 
 type Props = {}
 
 const ActorDetails: FC<Props> = () => {
   const params = useParams()
+  const { ip } = useAppContainer()
   const location = useLocation()
   const [actor, setActor] = useState<Actor>()
   const getActor = () => {
-    axios.get(`http://localhost:3010/actor?actorid=${params.actorId}`).then(res => setActor(res.data[0]))
+    axios.get(`http://${ip}:3010/actor?actorid=${params.actorId}`).then(res => setActor(res.data[0]))
   }
 
   console.log(location)

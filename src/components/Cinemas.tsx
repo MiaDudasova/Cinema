@@ -5,15 +5,17 @@ import { Outlet } from 'react-router'
 import {Cinema} from 'types/types'
 import axios from 'axios'
 import useDebounce from 'utils/hooks/useDebounce'
+import { useAppContainer } from './context'
 
 type Props = {}
 
 const Cinemas: FC<Props> = () => {
+  const { ip } = useAppContainer()
   const [search, setSearch] = useState<string>("")
   const [cinemas, setCinemas] = useState<Cinema[]>([])
   
   const getCinemas = () => {
-    axios.get('http://localhost:3010/cinemas').then(res => setCinemas(res.data))
+    axios.get(`http://${ip}:3010/cinemas`).then(res => setCinemas(res.data))
   }
 
   useEffect(() => {
@@ -27,10 +29,10 @@ const Cinemas: FC<Props> = () => {
   useEffect(() => {
     if (debouncedQuery.length !== 0) {
       axios
-        .get(`http://localhost:3010/cinemas?search=${debouncedQuery}`)
+        .get(`http://${ip}:3010/cinemas?search=${debouncedQuery}`)
         .then(res => setCinemas(res.data))
     } else {
-      axios.get('http://localhost:3010/cinemas').then(res => setCinemas(res.data))
+      axios.get(`http://${ip}:3010/cinemas`).then(res => setCinemas(res.data))
     }
   }, [debouncedQuery])
 
