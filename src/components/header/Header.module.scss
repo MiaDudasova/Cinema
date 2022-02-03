@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background: #fd788b;
+  max-height: 100px;
+
+  .logo {
+    height: 50px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .user {
+    display: inline-block;
+    padding: 10px 10px;
+    transition: .2s ease-in-out;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    margin: 2px;
+    border: 1px solid #febecc;
+    color: black;
+    position: relative;
+
+    &:hover {
+      background: #feb1b7;
+      color: black;
+    }
+
+  .history {
+    display: inline-block;
+    padding: 10px 10px;
+    transition: .2s ease-in-out;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    margin: 0px;
+    border: 1px solid #febecc;
+    margin-top: 10px;
+    padding: 3px;
+    height: 100;
+    width: 100;
+    background: #fd788b;
+    position: 'absolute';
+    right: 20;
+    color: #feb1b7;
+
+      &:hover {
+        background: #febecc;
+        color: #fd788b;
+      }
+  }
+  }
+}

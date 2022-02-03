@@ -1,0 +1,52 @@
+// pacnute body #fcdef0
+.hide {
+    height: 10vh;
+}
+
+.content {
+    display: flex;
+    background: #fedcdb;
+    width: 750px;
+    margin: auto;
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        width: 49.2%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        height: 400px;
+        width: 271px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 0px;
+        overflow: hidden;
+    }
+
+    .name {
+        display: flex;
+        color: black;
+        padding: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+        height: 50px;
+    }
+
+    .value {
+        display: flex;
+        width: 300px;
+        max-width: 300px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .header {
+        display: flex;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}

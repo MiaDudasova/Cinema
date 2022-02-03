@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #feb1b7;
+
+  a {
+    display: inline-block;
+    padding: 5px 10px;
+    transition: .2s ease-in-out;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    margin: 2px;
+    border: 1px solid #fd788b;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid #fd788b;
+      background: #fedcdb;
+    }
+
+    &.active {
+      background: #fd788b;
+      color: white;
+    }
+  }
+}
