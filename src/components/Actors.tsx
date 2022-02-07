@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import { AlignJustify } from 'react-feather'
 import ActorDetails from './actors/ActorDetails'
 import style from './actors/Actors.module.scss'
 

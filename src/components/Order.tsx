@@ -11,7 +11,7 @@ type Props = {}
 const Order: FC<Props> = () => {
   const { onAddToBasket } = useAppContainer()
   const params = useParams()
-  const movie = MOVIES.find(movie => movie.id === Number(params.movieId))
+  const movie = MOVIES.find(movie => movie.id === params.movieId)
   const cinemaOptions = movie?.cinemas.map(cinema =>
     CINEMAS.find(c => c.id === cinema)
   )
@@ -31,7 +31,7 @@ const Order: FC<Props> = () => {
 
   const handleAddToBasket = () => {
     onAddToBasket({
-      filmId: movie?.id as number,
+      filmId: movie?.id as string,
       price: movie?.price as number,
       quantity: ticketAmount,
       cinema: selectedCinema,

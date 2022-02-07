@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "tt0816692",
     "name": "Interstellar",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel mauris dui. Aliquam convallis tempor sem, eget varius ligula consectetur eu. In tortor ligula, scelerisque nec metus id, fringilla placerat leo. Integer in egestas tellus. Vivamus bibendum egestas dolor, ac placerat ex rutrum venenatis. Duis ornare dignissim porta. Aliquam quis nisi vitae dui elementum lacinia. Sed quis velit faucibus, feugiat ex quis, pretium nulla.",
     "img": "https://img.csfd.cz/files/images/film/posters/159/467/159467552_0cd8c7.jpg",
@@ -13,7 +13,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 2,
+    "id": "tt0094035",
     "name": "The Stepfather",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel mauris dui. Aliquam convallis tempor sem, eget varius ligula consectetur eu. In tortor ligula, scelerisque nec metus id, fringilla placerat leo. Integer in egestas tellus. Vivamus bibendum egestas dolor, ac placerat ex rutrum venenatis. Duis ornare dignissim porta. Aliquam quis nisi vitae dui elementum lacinia. Sed quis velit faucibus, feugiat ex quis, pretium nulla.",
     "img": "https://m.media-amazon.com/images/M/MV5BMTQ3ODU5OTUwMl5BMl5BanBnXkFtZTcwOTczNDU2Mg@@._V1_FMjpg_UX1000_.jpg",
@@ -26,7 +26,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 3,
+    "id": "tt0099785",
     "name": "Home Alone",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel mauris dui. Aliquam convallis tempor sem, eget varius ligula consectetur eu. In tortor ligula, scelerisque nec metus id, fringilla placerat leo. Integer in egestas tellus. Vivamus bibendum egestas dolor, ac placerat ex rutrum venenatis. Duis ornare dignissim porta. Aliquam quis nisi vitae dui elementum lacinia. Sed quis velit faucibus, feugiat ex quis, pretium nulla.",
     "img": "https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
@@ -39,7 +39,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 4,
+    "id": "tt1375666",
     "name": "Inception",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel mauris dui. Aliquam convallis tempor sem, eget varius ligula consectetur eu. In tortor ligula, scelerisque nec metus id, fringilla placerat leo. Integer in egestas tellus. Vivamus bibendum egestas dolor, ac placerat ex rutrum venenatis. Duis ornare dignissim porta. Aliquam quis nisi vitae dui elementum lacinia. Sed quis velit faucibus, feugiat ex quis, pretium nulla.",
     "img": "https://m.media-amazon.com/images/M/MV5BMjExMjkwNTQ0Nl5BMl5BanBnXkFtZTcwNTY0OTk1Mw@@._V1_.jpg",
@@ -52,7 +52,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 5,
+    "id": "tt1375670",
     "name": "Grown Ups",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel mauris dui. Aliquam convallis tempor sem, eget varius ligula consectetur eu. In tortor ligula, scelerisque nec metus id, fringilla placerat leo. Integer in egestas tellus. Vivamus bibendum egestas dolor, ac placerat ex rutrum venenatis. Duis ornare dignissim porta. Aliquam quis nisi vitae dui elementum lacinia. Sed quis velit faucibus, feugiat ex quis, pretium nulla.",
     "img": "https://m.media-amazon.com/images/M/MV5BMjA0ODYwNzU5Nl5BMl5BanBnXkFtZTcwNTI1MTgxMw@@._V1_.jpg",
@@ -65,7 +65,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 6,
+    "id": "tt1489889",
     "name": "Central Intelligence",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel mauris dui. Aliquam convallis tempor sem, eget varius ligula consectetur eu. In tortor ligula, scelerisque nec metus id, fringilla placerat leo. Integer in egestas tellus. Vivamus bibendum egestas dolor, ac placerat ex rutrum venenatis. Duis ornare dignissim porta. Aliquam quis nisi vitae dui elementum lacinia. Sed quis velit faucibus, feugiat ex quis, pretium nulla.",
     "img": "https://m.media-amazon.com/images/M/MV5BMjA2NzEzNjIwNl5BMl5BanBnXkFtZTgwNzgwMTEzNzE@._V1_.jpg",
@@ -78,7 +78,7 @@
     "cinemas": [1, 2, 3]
   },
   {
-    "id": 7,
+    "id": "tt7991608",
     "name": "Red Notice",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel mauris dui. Aliquam convallis tempor sem, eget varius ligula consectetur eu. In tortor ligula, scelerisque nec metus id, fringilla placerat leo. Integer in egestas tellus. Vivamus bibendum egestas dolor, ac placerat ex rutrum venenatis. Duis ornare dignissim porta. Aliquam quis nisi vitae dui elementum lacinia. Sed quis velit faucibus, feugiat ex quis, pretium nulla.",
     "img": "https://m.media-amazon.com/images/M/MV5BZmRjODgyMzEtMzIxYS00OWY2LTk4YjUtMGMzZjMzMTZiN2Q0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
@@ -91,7 +91,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 8,
+    "id": "tt1631867",
     "name": "Edge of Tomorrow",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel mauris dui. Aliquam convallis tempor sem, eget varius ligula consectetur eu. In tortor ligula, scelerisque nec metus id, fringilla placerat leo. Integer in egestas tellus. Vivamus bibendum egestas dolor, ac placerat ex rutrum venenatis. Duis ornare dignissim porta. Aliquam quis nisi vitae dui elementum lacinia. Sed quis velit faucibus, feugiat ex quis, pretium nulla.",
     "img": "https://m.media-amazon.com/images/M/MV5BMTc5OTk4MTM3M15BMl5BanBnXkFtZTgwODcxNjg3MDE@._V1_.jpg",
@@ -104,7 +104,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 9,
+    "id": "tt4154796",
     "name": "Avengers Endgame",
     "desc": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
     "img": "https://m.media-amazon.com/images/I/81rypQUyjFL._SL1363_.jpg",
@@ -117,7 +117,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 10,
+    "id": "tt3794354",
     "name": "Sonic the Hedgehog",
     "desc": "After discovering a small, blue, fast hedgehog, a small-town police officer must help him defeat an evil genius who wants to do experiments on him.",
     "img": "https://m.media-amazon.com/images/M/MV5BMDk5Yzc4NzMtODUwOS00NTdhLTg2MjEtZTkzZjc0ZWE2MzAwXkEyXkFqcGdeQXVyMTA3MTA4Mzgw._V1_.jpg",
@@ -130,7 +130,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 11,
+    "id": "tt0241527",
     "name": "Harry Potter and the Sorcerer's Stone",
     "desc": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
     "img": "https://m.media-amazon.com/images/M/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
@@ -143,8 +143,8 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 12,
-    "name": "Mrázik",
+    "id": "tt0058374",
+    "name": "MrÃ¡zik",
     "desc": "A fairy-tale about a conceited young man and a young woman with a tyrannical step-mother, who must overcome magical trials in order to be together.",
     "img": "https://m.media-amazon.com/images/M/MV5BMjAyMzI0NDIyMF5BMl5BanBnXkFtZTcwNjc5NDcxMQ@@._V1_.jpg",
     "rating": 3.2,
@@ -156,7 +156,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 13,
+    "id": "tt2294629",
     "name": "Frozen",
     "desc": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.",
     "img": "https://m.media-amazon.com/images/I/71jwCBe30hL._AC_SY741_.jpg",
@@ -169,7 +169,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 14,
+    "id": "tt4520988",
     "name": "Frozen 2",
     "desc": "Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom.",
     "img": "https://m.media-amazon.com/images/M/MV5BMjA0YjYyZGMtN2U0Ni00YmY4LWJkZTItYTMyMjY3NGYyMTJkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_FMjpg_UX1000_.jpg",
@@ -182,7 +182,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 15,
+    "id": "tt1431045",
     "name": "Deadpool",
     "desc": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.",
     "img": "https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg",
@@ -195,7 +195,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 16,
+    "id": "tt5463162",
     "name": "Deadpool 2",
     "desc": "Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable.",
     "img": "https://m.media-amazon.com/images/M/MV5BMDkzNmRhNTMtZDI4NC00Zjg1LTgxM2QtMjYxZDQ3OWJlMDRlXkEyXkFqcGdeQXVyNTU5MjkzMTU@._V1_FMjpg_UX1000_.jpg",
@@ -208,7 +208,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 17,
+    "id": "tt0126029",
     "name": "Shrek",
     "desc": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
     "img": "https://m.media-amazon.com/images/I/516E5372SBL.jpg",
@@ -221,7 +221,7 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 18,
+    "id": "tt0298148",
     "name": "Shrek 2",
     "desc": "Shrek and Fiona travel to the Kingdom of Far Far Away, where Fiona's parents are King and Queen, to celebrate their marriage. When they arrive, they find they are not as welcome as they thought they would be.",
     "img": "https://m.media-amazon.com/images/M/MV5BMDJhMGRjN2QtNDUxYy00NGM3LThjNGQtMmZiZTRhNjM4YzUxL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
@@ -234,9 +234,9 @@
     "cinemas": [1, 2]
   },
   {
-    "id": 19,
+    "id": "tt0413267",
     "name": "Shrek 3",
-    "desc": "Reluctantly designated as the heir to the land of Far, Far Away, Shrek hatches a plan to install the rebellious Artie as the new king while Princess Fiona tries to fend off a coup d'état by the jilted Prince Charming.",
+    "desc": "Reluctantly designated as the heir to the land of Far, Far Away, Shrek hatches a plan to install the rebellious Artie as the new king while Princess Fiona tries to fend off a coup d'Ã©tat by the jilted Prince Charming.",
     "img": "https://m.media-amazon.com/images/M/MV5BOTgyMjc3ODk2MV5BMl5BanBnXkFtZTcwMjY0MjEzMw@@._V1_.jpg",
     "rating": 3.2,
     "length": 93,

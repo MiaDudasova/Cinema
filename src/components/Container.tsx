@@ -9,8 +9,9 @@ export type AppState = {
   basket: Order[]
   films: Order[]
   ip: string
+  APIkey: string
   onAddToBasket: (o: Order) => void
-  onRemoveFromBasket: (id: number) => void
+  onRemoveFromBasket: (id: string) => void
   onConfirmOrder: () => void
   onHandleUserFilms: () => void
 }
@@ -25,13 +26,15 @@ const Container: FC<Props> = ({ children }) => {
     setBasket(prevBasket => [...prevBasket, order])
   }
 
-  const hrm = (id: number) => {
+  const hrm = (id: string) => {
     const newBasket = basket.filter(o => o.filmId !== id)
 
     setBasket(newBasket)
   }
 
   const ip = "192.168.0.192"
+
+  const APIkey = "k_8f0n0zo5"
 
   const [user, setUser] = useState<UserType>(USER)
 
@@ -60,6 +63,7 @@ const Container: FC<Props> = ({ children }) => {
     basket,
     films,
     ip,
+    APIkey,
     onAddToBasket: handleAddToBasket,
     onRemoveFromBasket: hrm,
     onConfirmOrder: handleConfirmOrder,

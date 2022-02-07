@@ -4,21 +4,17 @@ import routes from 'constants/routes'
 import { Link, useNavigate } from 'react-router-dom'
 import { X } from 'react-feather'
 import { useParams } from 'react-router'
-import { ACTORS } from 'constants/demoData/Data'
 import { Rating } from 'react-simple-star-rating'
 import axios from "axios"
-import { Actor, Movie } from 'types/types'
-import { useAppContainer } from 'components/context'
+import { IActor, IMDBFilm } from 'types/types'
 
 type Props = {}
 
 const MovieDetail: FC<Props> = () => {
   const navigate = useNavigate()
   const params = useParams()
-  const { ip } = useAppContainer()
-
-  const [movie, setMovie] = useState<Movie>()
-  const [actor, setActor] = useState<Actor[]>([])
+  const [film, setFilm] = useState<IMDBFilm>()
+  const [actor, setActor] = useState<IActor[]>([])
 
   const handleClose = (e: any) => {
     if (e.target.className === style.movieDetail) {
@@ -27,26 +23,22 @@ const MovieDetail: FC<Props> = () => {
     }
   }
 
-  const getMovies = () => {
-      axios
-        .get(`http://${ip}:3010/movies/movie?movieid=${params.movieId}`)
-        .then(res => setMovie(res.data[0]))
-  }
-
-  useEffect(() => {
-    getMovies()
-    getActor(Number(params.movieId))
-  }, [])
-
   const handleCrossClick = () => {
     navigate(-1)
   }
-
-  const getActor = (id: Number) => {
+  
+  const getFilmFromId = () => {
     axios
-      .get(`http://${ip}:3010/actors?movieid=${id}`)
-      .then(res => setActor(res.data))
+    .get(`https://imdb-api.com/en/API/Title/k_8f0n0zo5/${params.movieId}`)
+    .then(res => setFilm(res.data))
+    axios
+    .get(`https://imdb-api.com/en/API/Title/k_8f0n0zo5/${params.movieId}`)
+    .then(res => setActor(res.data.actorList))
   }
+  
+  useEffect(() => {
+    getFilmFromId()
+  }, [])
 
   return (
     <div className={style.movieDetail} onClick={handleClose}>
@@ -58,25 +50,26 @@ const MovieDetail: FC<Props> = () => {
             <X size={22} />
           </div>
         </div>
-        {!!movie && (
+        {!!film && (
           <div className={style.wrapper}>
-            <div className={style.header}>{movie.name}</div>
+            <div className={style.header}>{film?.title}</div>
             <div className={style.contentWrapper}>
               <div className={style.generalDesc}>
                 <span className={style.smTitle}>Director</span>
-                <span className={style.smValue}>{movie.director}</span>
+                <span className={style.smValue}>{film?.directors}</span>
                 <span className={style.smTitle}>Rating</span>
                 <span className={style.smValue}>
                   <Rating
-                    ratingValue={(movie.rating / 5) * 100}
+                    ratingValue={(Number(film?.imDbRating) / 5) * 100}
                     readonly
                     size={16}
                   />
                 </span>
                 <span className={style.smTitle}>Cast</span>
-                {actor.map(actors => {
+                {actor.slice(0,3).map(actors => {
+                  console.log(actors);
                   return (
-                    <span key={actors?.id} className={style.smValue}>
+                    <span key={actors.id} className={style.smValue}>
                       <Link to={`${routes.ACTORS}/actor/${actors?.id}`}>
                         {actors?.name}
                       </Link>
@@ -84,14 +77,14 @@ const MovieDetail: FC<Props> = () => {
                   )
                 })}
                 <span className={style.smTitle}>Short description</span>
-                <span className={style.smValue}>{movie.desc}</span>
+                <span className={style.smValue}>{film.plot}</span>
               </div>
               <div
-                style={{ backgroundImage: `url(${movie.img})` }}
+                style={{ backgroundImage: `url(${film.image})` }}
                 className={style.image}
               />
             </div>
-            <Link to={`${routes.ORDER}/${movie.id}`} className={style.button}>
+            <Link to={`${routes.ORDER}/${film.id}`} className={style.button}>
               Buy tickets
             </Link>
           </div>

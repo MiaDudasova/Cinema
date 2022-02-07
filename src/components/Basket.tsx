@@ -8,7 +8,7 @@ type Props = {}
 
 const Basket: FC<Props> = () => {
   const { basket, onRemoveFromBasket, onHandleUserFilms } = useAppContainer()
-  const movies = basket.map(o => MOVIES.find(m => m.id === o.filmId))
+  const movies = basket.map(o => MOVIES.find(m => m.id.toString() === o.filmId))
   const price = basket.map(o => o.price * o.quantity)
 
   const getTotalPrice = () => {
@@ -39,7 +39,7 @@ const Basket: FC<Props> = () => {
                 <div className={style.xdd}>price = {p?.price}</div>
                 <div
                   className={style.xButton}
-                  onClick={() => onRemoveFromBasket(p?.id as number)}
+                  onClick={() => onRemoveFromBasket("as")}
                 >
                   <X size={22} />
                 </div>

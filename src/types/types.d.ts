@@ -1,5 +1,5 @@
 export type Movie = {
-  id: number
+  id: string
   name: string
   desc: string
   img: string
@@ -12,12 +12,47 @@ export type Movie = {
   cinemas: number[]
 }
 
+export type IMDBFilm = {
+  id: string
+  title: string
+  imDbRating: string
+  actorList: IActor[]
+  directors: string
+  image: string
+  plot: string
+}
+
+export type ActorId = {
+  id: string
+  resultType: string
+  image: string
+  title: string
+  description: string
+}
+
 export type Actor = {
   id: number
   name: string
   age: number
   img: string
   desc: string
+}
+
+export type IMDBActor = {
+  id: string
+  name: string
+  image: string
+  knownFor: string
+  role: string
+  summary: string
+  birthDate: string
+}
+
+export type IActor = {
+  asCharacter: string
+  id: string
+  image: string
+  name: string
 }
 
 export type Cinema = {
@@ -28,7 +63,7 @@ export type Cinema = {
 }
 
 export type Order = {
-  filmId: number
+  filmId: string
   price: number
   quantity: number
   cinema: number
