@@ -1,6 +1,6 @@
 import { FC, useState } from 'react'
 import { Provider } from 'components/context'
-import { Order, User as UserType } from 'types/types'
+import { Order, Theme, User as UserType } from 'types/types'
 import { USER } from '../constants/demoData/Data'
 import useLocalStorage from 'utils/hooks/useLocalStorage'
 
@@ -10,6 +10,8 @@ export type AppState = {
   films: Order[]
   ip: string
   APIkey: string
+  theme: Theme
+  onChangeTheme: (them: Theme) => void
   onAddToBasket: (o: Order) => void
   onRemoveFromBasket: (id: string) => void
   onConfirmOrder: () => void
@@ -28,11 +30,16 @@ const Container: FC<Props> = ({ children }) => {
 
   const hrm = (id: string) => {
     const newBasket = basket.filter(o => o.filmId !== id)
-
     setBasket(newBasket)
   }
 
-  const ip = "192.168.0.192"
+  const [theme, setTheme] = useState<Theme>("default")
+
+  const handleTheme = (them: Theme) => {
+    setTheme(them)
+  }
+
+  const ip = "localhost"
 
   const APIkey = "k_8f0n0zo5"
 
@@ -64,6 +71,8 @@ const Container: FC<Props> = ({ children }) => {
     films,
     ip,
     APIkey,
+    theme,
+    onChangeTheme: handleTheme,
     onAddToBasket: handleAddToBasket,
     onRemoveFromBasket: hrm,
     onConfirmOrder: handleConfirmOrder,

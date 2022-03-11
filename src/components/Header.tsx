@@ -4,11 +4,14 @@ import { Link } from 'react-router-dom'
 import routes from 'constants/routes'
 import logo from 'styles/images/logo.png'
 import { useAppContainer } from './context'
+import { availableThemes } from 'constants/themes'
+import { Theme } from 'types/types'
 
 type Props = {}
 
 const Header: FC<Props> = () => {
-  const { user, films } = useAppContainer()
+  const { user, films, onChangeTheme } = useAppContainer()
+  const step = 100 / availableThemes.length
 
   const [isUserInfoShown, setIsUserInfoShown] = useState<boolean>(false)
 
@@ -27,6 +30,10 @@ const Header: FC<Props> = () => {
           <div className={style.history}>
             <Link to={`${routes.USER}/orders/${user.userId}`}>Kosik</Link>
             {films.length}
+            <div className={style.thees}>
+            <input min={1} max={4} step={1} onChange={(e: any) => onChangeTheme(availableThemes[e.target.value])} type='range'/>
+            <div className={style.slider} style={{right: step}}></div>
+            </div>
           </div>
         )}
       </div>

@@ -76,3 +76,5 @@ export type User = {
   img: string
   orders: order[]
 }
+
+export type Theme = "light" | "dark" | "middle" | "default"

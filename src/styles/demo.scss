@@ -1,0 +1,29 @@
+:root {
+  --font: blue;
+  --bg: red;
+  --light-bg: #96ffff;
+  --button-inactive: #f27d92;
+  --button-active: #c8eff9;
+}
+[data-theme= 'dark'] {
+  --font: white;
+  --bg: #0c0032;
+  --light-bg: #190061;
+  --button-inactive: #240090;
+  --button-active: #3500d3
+}
+[data-theme= 'light'] {
+  --font: gray;
+  --bg: white
+}
+[data-theme= 'middle'] {
+  --font: #022449;
+  --bg: #558dca;
+  --light-bg: #96ffff;
+  --button-inactive: #f27d42;
+  --button-active: #c8eff9;
+}
+[data-theme= 'default'] {
+  --font: gray;
+  --bg: white
+}

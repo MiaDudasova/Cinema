@@ -4,6 +4,7 @@ import style from './actordetails/ActorDetails.module.scss'
 import { IMDBActor } from "types/types"
 import axios from "axios"
 import { useLocation } from "react-router"
+import { useAppContainer } from "components/context"
 
 type Props = {}
 
@@ -11,10 +12,10 @@ const ActorDetails: FC<Props> = () => {
   const params = useParams()
   const location = useLocation()
   const [actor, setActor] = useState<IMDBActor>()
+  const { theme } = useAppContainer()
 
   const getActor = () => {
     axios.get(`https://imdb-api.com/en/API/Name/k_xive77dt/${params.actorId}`).then(res => setActor(res.data))
-    console.log(actor);
   }
 
   if (location.pathname.search('/actors/actor') !== -1) {
@@ -29,7 +30,7 @@ const ActorDetails: FC<Props> = () => {
     <div>
       {!!actor && (
         <>
-          <div className={style.content}>
+          <div id="content" className={style.content}>
             <div className={style.wrap}>
               <div className={style.name}>
               {actor.name}

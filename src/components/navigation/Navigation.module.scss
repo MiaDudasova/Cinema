@@ -1,28 +1,32 @@
+@import "styles/demo.scss";
+
 .navigation {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #feb1b7;
+  background: var(--bg);
 
   a {
     display: inline-block;
+    color: var(--font);
     padding: 5px 10px;
     transition: .2s ease-in-out;
     border-radius: 4px;
     border: 1px solid transparent;
     margin: 2px;
     border: 1px solid #fd788b;
+    background-color: var(--button-inactive);
     cursor: pointer;
 
     &:hover {
       border: 1px solid #fd788b;
-      background: #fedcdb;
+      background: var(--button-active);
     }
 
     &.active {
-      background: #fd788b;
-      color: white;
+      background: var(--button-active);
+      color: var(--font);
     }
   }
 }

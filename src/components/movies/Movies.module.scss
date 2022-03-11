@@ -1,10 +1,12 @@
+@import "styles/demo.scss";
+
 .wrapper {
-    background: #fedcdb;
+    background: var(--light-bg);
     padding-bottom: 20px;
 }
 
 .searchbar {
-    background: #fedcdb;
+    background: var(--light-bg);
     display: flex;
     justify-content: center;
     align-items: center;

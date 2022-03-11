@@ -1,0 +1,19 @@
+.thees {
+  position: absolute;
+  display: flex;
+  border: 2px solid orange;
+  border-radius: 15px;
+
+  .theme {
+    margin: 10px;
+  }
+
+  .slider {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position:  absolute;
+    border-radius: 10px;
+    
+  }
+}

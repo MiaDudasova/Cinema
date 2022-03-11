@@ -1,3 +1,5 @@
+@import "styles/demo.scss";
+
 .movie {
   max-width: 210px;
   width: 100%;
@@ -29,7 +31,7 @@
     background: rgba(0, 0, 0, .80);
     transition: .2s ease-in-out;
     padding: 10px;
-    color: #fd788b;
+    color: var(--button-inactive);
     display: flex;
     flex-direction: column;
     align-items: center;
