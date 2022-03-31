@@ -14,11 +14,11 @@ const User: FC<Props> = () => {
         <div key={index} className={style.item}>
           <div className={style.xd}>
             <div
-              style={{ backgroundImage: `url(${MOVIES[1].img})` }}
+              style={{ backgroundImage: `url(${MOVIES.find(c => p.filmId === c.id)?.img})` }}
               className={style.image}
             />
             <div className={style.text}>
-              <div className={style.xdd}>{MOVIES[1].name}</div>
+              <div className={style.xdd}>{MOVIES.find(c => p.filmId === c.id)?.name}</div>
               <div className={style.xdd}>quantity = {p.quantity}</div>
               <div className={style.xdd}>price = {p.price}</div>
             </div>

@@ -15,7 +15,7 @@ export const MOVIES: Movie[] = [
     "cinemas": [1, 2]
   },
   {
-    "id": "tt0814335",
+    "id": "tt0094035",
     "name": "The Stepfather",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel mauris dui. Aliquam convallis tempor sem, eget varius ligula consectetur eu. In tortor ligula, scelerisque nec metus id, fringilla placerat leo. Integer in egestas tellus. Vivamus bibendum egestas dolor, ac placerat ex rutrum venenatis. Duis ornare dignissim porta. Aliquam quis nisi vitae dui elementum lacinia. Sed quis velit faucibus, feugiat ex quis, pretium nulla.",
     "img": "https://m.media-amazon.com/images/M/MV5BMTQ3ODU5OTUwMl5BMl5BanBnXkFtZTcwOTczNDU2Mg@@._V1_FMjpg_UX1000_.jpg",
