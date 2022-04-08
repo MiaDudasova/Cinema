@@ -15,7 +15,7 @@ const Cinemas: FC<Props> = () => {
   const [cinemas, setCinemas] = useState<Cinema[]>([])
   
   const getCinemas = () => {
-    axios.get(`http://${ip}:3010/cinemas`).then(res => setCinemas(res.data))
+    axios.get(`http://${ip}:3020/cinemas`).then(res => setCinemas(res.data))
   }
 
   useEffect(() => {
@@ -29,10 +29,10 @@ const Cinemas: FC<Props> = () => {
   useEffect(() => {
     if (debouncedQuery.length !== 0) {
       axios
-        .get(`http://${ip}:3010/cinemas?search=${debouncedQuery}`)
+        .get(`http://${ip}:3020/cinemas?search=${debouncedQuery}`)
         .then(res => setCinemas(res.data))
     } else {
-      axios.get(`http://${ip}:3010/cinemas`).then(res => setCinemas(res.data))
+      axios.get(`http://${ip}:3020/cinemas`).then(res => setCinemas(res.data))
     }
   }, [debouncedQuery])
 

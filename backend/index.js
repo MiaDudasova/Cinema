@@ -8,9 +8,8 @@ const app = express()
 app.use(cors())
 
 app.get('/movies', (req, res) => {
-  const queryy = req.query.search.toLowerCase()
   if(!!req.query.search) {
-    const filteredMovies = movies.filter(movie => movie.name.toLowerCase().includes(queryy))
+    const filteredMovies = movies.filter(movie => movie.name.toLowerCase().includes(req.query.search.toLowerCase()))
 
     res.send(filteredMovies)
   }
