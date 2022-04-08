@@ -31,7 +31,7 @@ const Header: FC<Props> = () => {
             <Link to={`${routes.USER}/orders/${user.userId}`}>Kosik</Link>
             {films.length}
             <div className={style.thees}>
-            <input min={1} max={4} step={1} onChange={(e: any) => onChangeTheme(availableThemes[e.target.value])} type='range'/>
+            <input min={1} max={5} step={1} onChange={(e: any) => onChangeTheme(availableThemes[e.target.value])} type='range'/>
             <div className={style.slider} style={{right: step}}></div>
             </div>
           </div>

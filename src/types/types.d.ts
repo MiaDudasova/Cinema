@@ -77,4 +77,4 @@ export type User = {
   orders: order[]
 }
 
-export type Theme = "light" | "dark" | "middle" | "default"
+export type Theme = "light" | "dark" | "middle" | "default" | "pink" | "toxic"

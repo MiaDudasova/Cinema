@@ -13,8 +13,11 @@
   --button-active: #3500d3
 }
 [data-theme= 'light'] {
-  --font: gray;
-  --bg: white
+  --font: white;
+  --bg: #8a79c4;
+  --light-bg: #a095c2;
+  --button-inactive: #ebe8f3;
+  --button-active: #3500d3
 }
 [data-theme= 'middle'] {
   --font: #022449;
@@ -24,6 +27,24 @@
   --button-active: #c8eff9;
 }
 [data-theme= 'default'] {
-  --font: gray;
-  --bg: white
+  --font: #1278d6;
+  --bg: rgb(255, 255, 255);
+  --light-bg: #f6f8fa;
+  --button-inactive: #faf8f6;
+  --button-active: #c8eff9;
 }
+[data-theme= 'pink'] {
+  --font: #022449;
+  --bg: #6c1d6e;
+  --light-bg: #b62d98;
+  --button-inactive: #da22d0;
+  --button-active: #cf79c4;
+}
+[data-theme= 'toxic'] {
+  --font: #000102;
+  --bg: #1cf015;
+  --light-bg: #b0f542;
+  --button-inactive: #105a20;
+  --button-active: #abc22a;
+}
+

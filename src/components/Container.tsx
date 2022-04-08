@@ -33,7 +33,7 @@ const Container: FC<Props> = ({ children }) => {
     setBasket(newBasket)
   }
 
-  const [theme, setTheme] = useState<Theme>("middle")
+  const [theme, setTheme] = useState<Theme>("default")
 
   const handleTheme = (them: Theme) => {
     setTheme(them)
